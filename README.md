@@ -1,24 +1,47 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+# Ruby on Rails Blog App
+A blog app created with RoR.
 
-Things you may want to cover:
+## Class diagram for the Database
 
-* Ruby version
+## Getting Started
+- Check the Ruby version or if you have at all by running `ruby -v` if it returns  `ruby 3.1.2p20 (2022-04-12 revision 4491bb740a)` or similar, you have Ruby installed.
 
-* System dependencies
+* Ruby version used `ruby 3.1.2`
 
-* Configuration
+- Clone the repository by running
+**ssh** `git clone git@github.com:Nyame-Wolf/the-blog.git`
+**html** `https://github.com/Nyame-Wolf/the-blog.git` in your CLI.
+- `cd blog-app`
+- Run `bundle install`
+- Run `rails server`
+- Open Browser `http://localhost:3000/`
 
-* Database creation
+- Ensure you have postgresssql installed before running the application.
+## Author
 
-* Database initialization
+👤 *Mumenya Nyamu* 🧑🏻‍💻
+- GitHub: [@Nyame-Wolf](https://github.com/Nyame-Wolf)
+- Twitter: [@mumenyam](https://twitter.com/Mumenyam)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mumenya-nyamu-software-engineer/)
 
-* How to run the test suite
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+Feel free to check the [issues page](https://github.com/Nyame-Wolf/the-blog/issues).
 
-* ...
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
+
+
+
+
