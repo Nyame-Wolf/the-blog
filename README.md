@@ -5,6 +5,9 @@
 A blog app created with RoR.
 
 ## Class diagram for the Database
+<img width="1042" alt="Entity relationship Diagram" src="https://user-images.githubusercontent.com/48546992/196545579-b77b7d31-f8e2-421d-9db4-9d705bec701b.png">
+
+
 
 ## Getting Started
 - Check the Ruby version or if you have at all by running `ruby -v` if it returns  `ruby 3.1.2p20 (2022-04-12 revision 4491bb740a)` or similar, you have Ruby installed.
