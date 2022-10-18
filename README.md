@@ -22,7 +22,10 @@ A blog app created with RoR.
 - Run `rails server`
 - Open Browser `http://localhost:3000/`
 
-- Ensure you have postgresssql installed before running the application.
+- Ensure you have postgresssql installed before running the application. `which psql` or `psql --version`
+- Run `rails db:create`
+- create a [.envs](https://medium.com/geekculture/postgresql-rails-and-macos-16248ddcc8ba) file using the link to host postgress credentials 
+
 ## Author
 
 👤 *Mumenya Nyamu* 🧑🏻‍💻
