@@ -4,6 +4,6 @@ class Author < ApplicationRecord
   has_many :likes
 
   def three_recent_posts_per_user
-    Post.last(3)
+    posts.last(3)
   end
 end
