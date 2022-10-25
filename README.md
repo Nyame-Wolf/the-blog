@@ -26,6 +26,15 @@ A blog app created with RoR.
 - Run `rails db:create`
 - create a [.envs](https://medium.com/geekculture/postgresql-rails-and-macos-16248ddcc8ba) file using the link to host postgress credentials 
 
+## tesing
+To run tests:
+ - ensure you have rspec installed: running bundle install will install it since I have included it in the gem file
+ - To run a specific test:
+ - Run `rspec spec/models<name_of_spec_file>`
+ - To run all tests:
+ - Run `rspec spec`
+
+
 ## Author
 
 👤 *Mumenya Nyamu* 🧑🏻‍💻
