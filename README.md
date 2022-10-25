@@ -42,6 +42,12 @@ To run tests:
 - Twitter: [@mumenyam](https://twitter.com/Mumenyam)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mumenya-nyamu-software-engineer/)
 
+## Acknowledgments
+
+- [Microverse](https://www.microverse.org/)
+- Coding Partners
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
