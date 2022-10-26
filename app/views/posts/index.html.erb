@@ -19,7 +19,7 @@
         </div>
         <div class="post-comment"> 
         <h3 class="comment-title">Comments:</h3>
-        <%post.comments.each do |comment|%>
+        <%post.five_most_recent_comments_per_post.each do |comment|%>
             <div> 
                 <span> <%= comment.author.name%> </span>: <span><%= comment.text%></span>
             </div>
