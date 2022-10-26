@@ -1,2 +1,21 @@
-<h1>Posts show</h1>
-<p>posts show route</p>
+<div >
+    <h2>Post<%=@post.id%> by:<%= @author.name %></h2>
+</div>
+    <div class="posts-container">
+        <h3 class="post-title">
+             <%= @post.title%>
+        </h3>
+        <p><%= @post.text%></p>
+        <span>Comments:<%=@post.comments_counter%></span>
+        <span>Likes: <%= @post.likes_counter%> </span>
+    </div>
+
+    <div class="post-comment"> 
+        <h3 class="comment-title">Comments:</h3>
+        <%@post.comments.each do |comment|%>
+            <div> 
+                <span> <%= comment.author.name%> </span>: <span><%= comment.text%></span>
+            </div>
+        <%end%>
+    </div>   
+</div>

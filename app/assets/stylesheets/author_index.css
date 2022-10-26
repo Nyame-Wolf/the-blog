@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.specific-user {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid black;
+}
+
+.specific-user-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.image {
+  border: 1px solid black;
+}
+
+.author-name {
+  font-size: 3rem;
+}
+
+.post-counter {
+  font-size: 1.6rem;
+}

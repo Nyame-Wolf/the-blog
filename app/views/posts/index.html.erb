@@ -1,2 +1,31 @@
-<h1>Posts index</h1>
-<p>User posts</p>
+<div class="container">
+    <div class="specific-user">
+        <div class="image">
+            <img  src=<%= @author.photo%> > 
+        </div>
+        <div class="specific-user-content">
+            <h2><%= @author.name %></h2>
+            <span> Post Counter: <%= @author.posts_counter %></span>
+        </div>
+    </div>
+
+    <%@author.posts.each do |post|%>
+    <%= link_to author_post_path(@author, post) do %>
+        <div class="posts-container">
+            <div class="post-title"><%= post.title%></div>
+             <p><%= post.text%></p>
+             <span>Comments:<%=post.comments_counter%></span>
+             <span>Likes: <%= post.likes_counter%> </span>
+        </div>
+        <div class="post-comment"> 
+        <h3 class="comment-title">Comments:</h3>
+        <%post.five_most_recent_comments_per_post.each do |comment|%>
+            <div> 
+                <span> <%= comment.author.name%> </span>: <span><%= comment.text%></span>
+            </div>
+        <%end%>
+        </div>
+       <% end%>  
+    <% end%>    
+         <button class="pagination-btn">Pagination </button>
+</div>

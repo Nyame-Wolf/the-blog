@@ -1,2 +1,31 @@
 <h1>Authors show</h1>
+<div class="container">
+    <div class="specific-user">
+        <div class="image">
+            <img  src=<%= @author.photo%> > 
+        </div>
+        <div class="specific-user-content">
+            <h2><%= @author.name %></h2>
+            <span> Post Counter: <%= @author.posts_counter %></span>
+        </div>
+    </div>
 
+    <div>
+        <%= @author.bio%>
+    </div>
+
+    <%@author.three_recent_posts_per_user.each do |post|%>
+        <div class="posts-container">
+            <div class="post-title"><%= post.title%></div>
+             <p><%= post.text%></p>
+             <span>Comments:<%=post.comments_counter%></span>
+             <span>Likes: <%= post.likes_counter%> </span>
+             
+        </div>
+    <% end%>
+
+    <%= link_to author_posts_path(@author) do %>
+         <button class="posts-btn">See all Posts </button>
+    <% end %>
+    
+</div>

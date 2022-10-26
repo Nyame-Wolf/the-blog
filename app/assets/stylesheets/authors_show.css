@@ -1,0 +1,15 @@
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.posts-btn {
+  padding: 15px;
+  box-shadow: 2px 5px #888;
+}
