@@ -1,0 +1,14 @@
+.post-comment {
+  border: 5px solid black;
+}
+
+.comment-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.pagination-btn {
+  width: 90px;
+  padding: 10px;
+  box-shadow: 2px 5px #888;
+}
