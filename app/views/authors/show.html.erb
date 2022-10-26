@@ -14,7 +14,7 @@
         <%= @author.bio%>
     </div>
 
-    <%@author.posts.each do |post|%>
+    <%@author.three_recent_posts_per_user.each do |post|%>
         <div class="posts-container">
             <div class="post-title"><%= post.title%></div>
              <p><%= post.text%></p>
