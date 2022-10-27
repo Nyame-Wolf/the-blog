@@ -1,7 +1,8 @@
+<div>
 <div >
     <h2>Post<%=@post.id%> by:<%= @author.name %></h2>
 </div>
-    <div class="posts-container">
+    <div class="posts-container-show">
         <h3 class="post-title">
              <%= @post.title%>
         </h3>
@@ -15,7 +16,12 @@
         <%@post.comments.each do |comment|%>
             <div> 
                 <span> <%= comment.author.name%> </span>: <span><%= comment.text%></span>
-            </div>
+            </div> 
         <%end%>
-    </div>   
+ <%= render 'comments/comment'%>
+    </div> 
+<div class="comments-likes">
+<%= render 'likes/like'%>
+</div>
+</div>
 </div>
