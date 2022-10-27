@@ -1,0 +1,25 @@
+.posts-container-show {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+    height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+.comment-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.comment-form{
+    display: flex;
+    gap: 5px;
+}
