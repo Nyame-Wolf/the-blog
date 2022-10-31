@@ -2,8 +2,11 @@ require 'rails_helper'
 
 RSpec.describe 'Authors', type: :request do
   describe 'GET /show' do
+    before(:all) do
+      @author1 = Author.create!(name: 'Vitor', photo: 'https://i.picsum.photos/id/908/200/200.jpg?hmac=CovMVsq4EkU03tnOxNLyxYsLlemPPHBizxcnmaHaRcU', bio: 'Teacher from Brazil.')
+    end
     before(:each) do
-      get '/authors/show'
+      get author_path(@author1.id)
     end
     it 'returns http success' do
       expect(response).to have_http_status(:success)
@@ -18,7 +21,7 @@ RSpec.describe 'Authors', type: :request do
 
   describe 'GET /index' do
     before(:each) do
-      get '/authors/index'
+      get authors_path 
     end
     it 'returns http success' do
       expect(response).to have_http_status(:success)
