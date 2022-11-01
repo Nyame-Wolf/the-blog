@@ -58,6 +58,10 @@ RSpec.feature 'Posts', type: :feature do
       expect(page).to have_content("Likes: #{@post2.likes.count}")
     end
 
+    it 'I can see a section for pagination if there are more posts than fit on the view' do
+      expect(page).to have_content('Pagination')
+    end
+
     it 'When I click on a post, it redirects me to that post\'s show page.' do
       click_link('Post2')
       expect(current_path).to eql(author_post_path(@author2, @post2))
