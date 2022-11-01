@@ -10,10 +10,14 @@
     </div>
 
     <%@author.posts.each do |post|%>
-    <%= link_to author_post_path(@author, post) do %>
         <div class="posts-container">
-            <div class="post-title"><%= post.title%></div>
-            <%end%>
+        
+            <div class="post-title">
+                <%= link_to author_post_path(@author, post) do %>
+                    <%= post.title%>
+                <%end%>
+            </div>
+           
              <p><%= post.text%></p>
              <div class="comments-likes">
              <span>💬 Comments:<%=post.comments_counter%></span>

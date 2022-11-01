@@ -16,7 +16,11 @@
 
     <%@author.three_recent_posts_per_user.each do |post|%>
         <div class="posts-container">
-            <div class="post-title"><%= post.title%></div>
+            <div class="post-title">
+                <%= link_to author_post_path(@author, post) do %>
+                    <%= post.title%>
+                <% end %>
+            </div>
              <p><%= post.text%></p>
              <div class="comments-likes">
                 <span> 💬 Comments: <%=post.comments_counter%></span>
@@ -24,6 +28,7 @@
              </div>
              
         </div>
+
     <% end%>
 
     <%= link_to author_posts_path(@author) do %>

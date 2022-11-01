@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   validates :likes_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   def five_most_recent_comments_per_post
-    comments.last(5)
+    comments.includes([:author]).last(5)
   end
 
   private
