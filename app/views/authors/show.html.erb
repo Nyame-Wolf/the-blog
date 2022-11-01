@@ -6,7 +6,7 @@
         </div>
         <div class="specific-user-content">
             <h2><%= @author.name %></h2>
-            <span> Post Counter: <%= @author.posts_counter %></span>
+            <span> Number of Posts: <%= @author.posts_counter %></span>
         </div>
     </div>
 
@@ -18,8 +18,10 @@
         <div class="posts-container">
             <div class="post-title"><%= post.title%></div>
              <p><%= post.text%></p>
-             <span>Comments:<%=post.comments_counter%></span>
-             <span>Likes: <%= post.likes_counter%> </span>
+             <div class="comments-likes">
+                <span> 💬 Comments: <%=post.comments_counter%></span>
+                <span>Likes: <%= post.likes_counter%> </span>
+             </div>
              
         </div>
     <% end%>
