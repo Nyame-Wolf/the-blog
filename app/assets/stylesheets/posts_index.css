@@ -1,5 +1,8 @@
 .post-comment {
   border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .comment-title {
@@ -11,4 +14,8 @@
   width: 90px;
   padding: 10px;
   box-shadow: 2px 5px #888;
+}
+.like{
+  padding: 10px;
+  border-radius: 10px;
 }

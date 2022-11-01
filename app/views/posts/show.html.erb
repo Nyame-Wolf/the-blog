@@ -1,14 +1,16 @@
 <div>
 <div >
-    <h2>Post<%=@post.id%> by:<%= @author.name %></h2>
+    <h2>Post <%=@post.id%> by: <%= @author.name %></h2>
 </div>
     <div class="posts-container-show">
         <h3 class="post-title">
              <%= @post.title%>
         </h3>
         <p><%= @post.text%></p>
-        <span>Comments:<%=@post.comments_counter%></span>
+        <div class="comments-likes">
+        <span> 💬 Comments: <%=@post.comments_counter%></span>
         <span>Likes: <%= @post.likes_counter%> </span>
+        </div>
     </div>
 
     <div class="post-comment"> 
@@ -18,6 +20,7 @@
                 <span> <%= comment.author.name%> </span>: <span><%= comment.text%></span>
             </div> 
         <%end%>
+        
  <%= render 'comments/comment'%>
     </div> 
 <div class="comments-likes">
