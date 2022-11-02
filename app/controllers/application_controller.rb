@@ -1,5 +1,3 @@
 class ApplicationController < ActionController::Base
-  def current_user
-    Author.first
-  end
+  before_action :authenticate_author!
 end
