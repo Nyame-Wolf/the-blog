@@ -3,7 +3,8 @@
         MyLogo
       </div>
 <ul>
-  <li><%= link_to 'Home', root_path%></li>    
+  <li><%= link_to 'Home', root_path%></li>  
+  <%= button_to "Logout", destroy_author_session_path, method: :delete  %>  
 </ul>
   </header>
 
