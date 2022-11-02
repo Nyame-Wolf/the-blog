@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :authors
  root 'authors#index'
   get 'authors/index'
   resources :authors, only: [:index, :show] do
