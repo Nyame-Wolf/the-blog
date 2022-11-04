@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  gap:15px;
+  gap: 15px;
   padding: 10px;
 }
 
@@ -16,12 +16,12 @@
   box-shadow: 2px 5px #888;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 25px;
   align-items: center;
 }
 
-.delete{
+.delete {
   padding: 10px;
 }
