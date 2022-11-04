@@ -3,8 +3,15 @@
         MyLogo
       </div>
 <ul>
-  <li><%= link_to 'Home', root_path%></li>  
-  <%= button_to "Logout", destroy_author_session_path, method: :delete  %>  
+  <li><%= link_to 'Home', root_path%></li> 
+  <% if author_signed_in?%>  
+    <li><%= link_to 'Sign Out', destroy_author_session_path, method: :delete %></li> 
+    <li><%= link_to 'Edit Profile', edit_author_registration_path%></li>
+    <%= button_to "Logout", destroy_author_session_path, method: :delete, data: { turbo: false }, :class => 'logout' %>
+    <% else%> 
+    <li><%= link_to 'Sign Up', new_author_registration_path %></li> 
+    <li><%= link_to 'Sign In', new_author_session_path%></li> 
+    <% end %>
 </ul>
   </header>
 
