@@ -21,7 +21,7 @@ RSpec.describe 'Author index page', type: :feature do
       expect(images.count).to eq(Author.all.count)
     end
     it 'I can see the number of posts each user has written.' do
-      expect(page).to have_content('Post Counter:')
+      expect(page).to have_content('Number of Posts:')
     end
     it 'When I click on a user, I am redirected to that user\'s show page.' do
       click_on('Mumenya')

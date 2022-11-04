@@ -20,6 +20,7 @@ RSpec.describe 'Author show page', type: :feature do
     it 'see the user\'s profile picture.' do
       images = page.all('img')
       expect(images.count).to eq(1)
+      expect(page).to have_css("img[src*='#{@author2.photo}']")
     end
     it 'see the user\'s username' do
       expect(page.find('h2', text: 'Diego')).to be_truthy
