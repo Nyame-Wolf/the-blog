@@ -3,7 +3,7 @@ class LikesController < ApplicationController
     @like = Like.new
     @author = Author.find(params[:author_id])
     @post = Post.find(params[:post_id])
-    @like.author = current_user
+    @like.author = current_author
     @like.post = @post
 
     if @like.save
