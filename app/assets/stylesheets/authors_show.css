@@ -1,7 +1,9 @@
 .posts-container {
   display: flex;
   flex-direction: column;
-  border: 5px solid black;
+  border: 1px solid black;
+  gap: 15px;
+  padding: 10px;
 }
 
 .post-title {
@@ -12,4 +14,14 @@
 .posts-btn {
   padding: 15px;
   box-shadow: 2px 5px #888;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.delete {
+  padding: 10px;
 }
