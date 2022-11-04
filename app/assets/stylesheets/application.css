@@ -21,6 +21,11 @@
   text-decoration: none;
 }
 
+body {
+  background-color: darkslategray;
+  background-blend-mode: color-dodge;
+}
+
 .header-container {
   background-color: black;
   color: white;

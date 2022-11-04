@@ -38,3 +38,42 @@
   border-radius: 4px;
   padding: 5px;
 }
+
+.create-post {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 15px;
+}
+
+.post-form {
+  margin: 1em;
+  border: 1px solid #d3d3d3;
+
+  /* background: linear-gradient(45deg, black, transparent); */
+  width: 500px;
+  min-width: 375px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.textarea {
+  width: 200px;
+}
+
+.post-btn {
+  width: 60px;
+}
+
+.create_delete_btns {
+  display: flex;
+  gap: 10px;
+}
