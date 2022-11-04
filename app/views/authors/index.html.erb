@@ -1,12 +1,12 @@
 <h1>Authors</h1>
 <div class="container">
-    <%@authors.each do |author|  %>
+    <%@authors.includes(:posts).each do |author|  %>
     <%= link_to author_path(author) do %>
     <div class="specific-user">
         <div class="image"> <img  src=<%= author.photo%> > </div>
     <div class="specific-user-content">
         <h2 class="author-name"><%= author.name %></h2>
-       <span class="post-counter"> Post Counter: <%= author.posts_counter %></span>
+       <span class="post-counter"> Number of Posts: <%= author.posts.length %></span>
     </div>
     </div>
     <% end %>
