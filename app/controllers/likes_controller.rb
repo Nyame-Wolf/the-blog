@@ -10,6 +10,7 @@ class LikesController < ApplicationController
       redirect_to author_post_path(@author, @post)
     else
       render :new
+      # flash[:notice] = 'Already liked'
     end
   end
 end
