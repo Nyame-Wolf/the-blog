@@ -3,9 +3,9 @@ Rails.application.routes.draw do
  root 'authors#index'
   get 'authors/index'
   resources :authors, only: [:index, :show] do
-    resources :posts, only: [:index, :new, :create, :show] do
+    resources :posts, only: [:index, :new, :create, :show, :destroy] do
       resources :comments, only: [:new, :create] 
-      resources :likes, only: [ :create] 
+      resources :likes, only: [ :new, :create] 
     end
   end
 
