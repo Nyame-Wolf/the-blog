@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <%@author.posts.each do |post|%>
+    <%@author.posts.includes([:comments, :likes]).each do |post|%>
         <div class="posts-container">
         
             <div class="post-title">
@@ -20,13 +20,13 @@
            
              <p><%= post.text%></p>
              <div class="comments-likes">
-             <span>💬 Comments:<%=post.comments_counter%></span>
-             <span>Likes: <%= post.likes_counter%> </span>
+             <span>💬 Comments:<%=post.comments.length%></span>
+             <span>Likes: <%= post.likes.length%> </span>
              </div>
         </div>
         <div class="post-comment"> 
         <h3 class="comment-title">Comments:</h3>
-        <%post.five_most_recent_comments_per_post.each do |comment|%>
+        <% post.five_most_recent_comments_per_post.each do |comment|%>
             <div> 
                 <span> <%= comment.author.name%> </span>: <span><%= comment.text%></span>
             </div>

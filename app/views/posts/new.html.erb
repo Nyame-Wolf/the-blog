@@ -1,16 +1,11 @@
-<%= form_with model: Post.new, url:author_posts_path do |form| %>
-<div>
-  <%= form.label :title %><br>
-  <%= form.text_field :title %>
-</div>
+<div class="post-form-container">
+  <div class="post-form">
+    <%= form_with model: Post.new, url:author_posts_path, class:"create-post" do |form| %>
 
-  <div>
-    <%= form.label :text %><br>
-    <%= form.text_field :text %>
+      <%= form.text_field :title, placeholder: "Post title", class:"textarea" %>
+      <%= form.text_area :text, size: "70x5", placeholder: "Your post message", class:"textarea"%>
+      <%= form.submit "Create", class:"post-btn" %> 
+
+    <% end %>
   </div>
- 
-  <div>
-    <%= form.submit "Create" %>
-  </div>
-  
-<% end %>
+</div>
