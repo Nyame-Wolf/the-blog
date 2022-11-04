@@ -1,8 +1,8 @@
 .container {
   display: flex;
-  gap: 30px;
   flex-direction: column;
   padding: 40px;
+  gap: 20px;
 }
 
 .specific-user {

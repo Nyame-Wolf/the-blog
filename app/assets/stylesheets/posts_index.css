@@ -1,8 +1,7 @@
 .post-comment {
-  border: 5px solid black;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 0px 0px 0px ;
 }
 
 .comment-title {
